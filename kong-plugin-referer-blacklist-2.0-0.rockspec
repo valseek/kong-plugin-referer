@@ -5,7 +5,7 @@ local pluginName = package:match("^kong%-plugin%-(.+)$")
 
 supported_platforms = {"linux", "macosx"}
 source = {
-  url = "git@github.com:valseek/kong-plugin-referer.git",
+  url = "https://github.com/valseek/kong-plugin-referer.git",
   tag = "v2.0.0"
 }
 
