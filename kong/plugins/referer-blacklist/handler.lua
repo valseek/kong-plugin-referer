@@ -39,6 +39,9 @@ end
 
 local function doTestReferer(conf)
   local header = ngx_get_headers()["Referer"]
+  
+  if header == nil then
+    return true
 
   if type(header) == "string" then
     -- first check our cache
@@ -53,7 +56,7 @@ local function doTestReferer(conf)
     end
   end
 
-  return false, {status = 403, message = "Invalid referer"}
+  return false, {status = 403, message = "Request Forbidden"}
 end
 
 
