@@ -5,7 +5,7 @@ local pluginName = package:match("^kong%-plugin%-(.+)$")
 
 supported_platforms = {"linux", "macosx"}
 source = {
-  url = "git://github.com:valseek/kong-plugin-referer-blacklist",
+  url = "git://github.com/valseek/kong-plugin-referer-blacklist",
   tag = "v2.0.0"
 }
 
