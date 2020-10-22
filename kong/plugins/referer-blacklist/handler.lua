@@ -42,6 +42,7 @@ local function doTestReferer(conf)
   
   if header == nil then
     return true
+  end
 
   if type(header) == "string" then
     -- first check our cache
