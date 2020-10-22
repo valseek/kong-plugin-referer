@@ -24,16 +24,16 @@ end
 local function testListReferer(listReferer, refererToTest)
   local refererDomain = refererToTest:match("^https?://([^/]+)")
   if refererDomain == nil then
-    return false
+    return true
   end
 
   for _, value in ipairs(listReferer) do
     if testReferer(value, refererDomain) == true then
-      return true
+      return false
     end
   end
 
-  return false
+  return true
 end
 
 

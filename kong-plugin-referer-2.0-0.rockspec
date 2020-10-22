@@ -1,16 +1,16 @@
-package = "kong-plugin-referer"
+package = "kong-plugin-referer-blacklist"
 version = "2.0-0"
 
 local pluginName = package:match("^kong%-plugin%-(.+)$")
 
 supported_platforms = {"linux", "macosx"}
 source = {
-  url = "git://github.com/eyolas/kong-plugin-referer",
+  url = "git@github.com:valseek/kong-plugin-referer.git"
   tag = "v2.0.0"
 }
 
 description = {
-  summary = "Easily add referer access to your API by enabling this plugin",
+  summary = "Easily add referer black list access to your API by enabling this plugin",
   license = "MIT"
 }
 
