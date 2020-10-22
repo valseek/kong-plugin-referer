@@ -11,13 +11,13 @@ anyone could spoof. For security consider real authentication plugins.
 
 Install the rock when building your Kong image/instance:
 ```
-luarocks install kong-plugin-referer
+luarocks install kong-plugin-referer-blacklist
 ```
 
 Add the plugin to your `custom_plugins` section in `kong.conf`, the `KONG_CUSTOM_PLUGINS` is also available.
 
 ```
-custom_plugins = referer
+custom_plugins = referer-blacklist
 ```
 
 ----
